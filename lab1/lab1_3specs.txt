@@ -1,0 +1,10 @@
+Two kinds of inverses
+
+First state machine outputs a pattern of 01010101
+Second state machine outputs a pattern of 10101010
+
+Both run concurrently and take turns outputting (ex. state machine 1 outputs, then state machine 2, then back to
+state machine 1, and so on) and do not interrupt each other (i.e. they wait for the other one to be done).
+
+If A0 is 1 they both wait and no LEDs are on
+If A0 goes back to being 0, then state machine 1 starts the cycle of aternation

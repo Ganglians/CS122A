@@ -1,0 +1,14 @@
+When A is 00000011, then B would scroll two LEDs next to each other from outside of B0 to oustide of B7.
+
+When A is 00001001, then B would scroll two LEDs with two off LEDs in-between from outside of B7 to 
+
+outside of B0.
+
+When A is 00111001, then B would flash 00111001, invert the bits, mirror the first set of bits, an then 
+invert that new set before repeating from the beginning.
+
+When none of the conditions are satisfied, then two LEDs will start from the end (10000001) and move 
+
+until they meet (00011000), before going back to the edge to repeat the loop.
+
+Everything changes every half-second!
